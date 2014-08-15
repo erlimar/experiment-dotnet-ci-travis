@@ -78,3 +78,4 @@ UpgradeLog*.htm
 
 !lib/**/*.exe
 !lib/**/*.dll
+!src/.nuget/**
