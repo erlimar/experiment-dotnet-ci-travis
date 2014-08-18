@@ -1,0 +1,14 @@
+language: c
+ 
+before_install:
+  - sudo apt-get update -qq > /dev/null
+  - sudo apt-get install -qq mono-devel mono-gmcs > /dev/null
+  - mozroots --import --sync
+#  - mv -f src/.nuget/NuGet.mono.targets src/.nuget/NuGet.targets
+  - chmod +x lib/xunit/xunit.console.clr4.x86.exe
+  - export EnableNuGetPackageRestore=true
+ 
+script:
+  - cd src/
+  - xbuild E5R.Experiment.CI.Travis.sln
+  - mono ../lib/xunit/xunit.console.clr4.x86.exe E5R.Experiment.CI.Travis.Tests/bin/Debug/E5R.Experiment.CI.Travis.Tests.dll
