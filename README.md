@@ -1,7 +1,5 @@
-experiment-dotnet-ci-travis
+experiment-dotnet-ci-travis [![Build Status](https://travis-ci.org/erlimar/experiment-dotnet-ci-travis.png)](https://travis-ci.org/erlimar/experiment-dotnet-ci-travis)
 ===========================
-
-[![Build Status](https://travis-ci.org/erlimar/experiment-dotnet-ci-travis.png)](https://travis-ci.org/erlimar/experiment-dotnet-ci-travis)
 
 Experimento de Integração Contínua em projetos .NET usando serviço Travis CI
 
