@@ -10,7 +10,7 @@ namespace E5R.Experiment.CI.Travis.Tests
         [Fact]
         public void ValidatesNameIsNotNull()
         {
-            Assert.Throws<NotImplementedException>(() =>
+            Assert.Throws<ArgumentNullException>(() =>
             {
                 new Target.Feature(null);
             });
@@ -19,7 +19,7 @@ namespace E5R.Experiment.CI.Travis.Tests
         [Fact]
         public void ValidatesNameIsNotEmpty()
         {
-            Assert.Throws<NotImplementedException>(() =>
+            Assert.Throws<ArgumentNullException>(() =>
             {
                 new Target.Feature("");
             });

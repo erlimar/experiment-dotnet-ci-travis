@@ -12,7 +12,11 @@ namespace E5R.Experiment.CI.Travis
 
         public Feature(string name)
         {
-            throw new NotImplementedException();
+            if (String.IsNullOrEmpty(name))
+            {
+                throw new ArgumentNullException("name");
+            }
+            this.Name = name.ToLower();
         }
     }
 }
